@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Delete{% endblock %}
+{% block body %}
+<div class="container">
+    <center>
+        <div class="form-group">
+            <form action="" method="post" enctype="multipart/form-data" class=" p-3" style="color:#fff;"><br>
+                {% csrf_token %}
+                <div class="form-group">
+                    <h2>Are you sure ?</h2>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-danger">yes</button>
+                </div>
+            </form>
+        </div>
+    </center>
+</div>
+{% endblock %}
